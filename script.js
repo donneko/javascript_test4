@@ -28,4 +28,14 @@ const ober = new IntersectionObserver((aaaa) =>{
 
 ober.observe(footer);
 
+const oberr = new IntersectionObserver((aaaa) =>{
+    aaaa.forEach(a =>{
+        if(a.isIntersecting){
+            a.target.classList.add("ac")
+        }else{
+            a.target.classList.remove("ac")
+        }
+    });
+});
 
+bg.forEach(a=>{oberr.observe(a)});

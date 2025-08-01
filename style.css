@@ -38,6 +38,6 @@ main section:nth-child(2){
 main section:nth-child(3){
     background-color: #f7ff07;
 }
-main .activ{
+main .ac{
     background-color: rgb(255, 0, 0);
 }
