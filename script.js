@@ -1,20 +1,25 @@
 const dq = document.querySelectorAll.bind(document);
 const dgId = document.getElementById.bind(document);
 
-const bg = dq(".bg");
+const CsName = "are";
+
+const bg = dq(`${CsName}`);
 const footer = dgId("footer");
 const box = dgId("box");
 
+let cou =0;
 
 
-const AddHtml(`<section class="${}"></section>`);
+const AddHtml=(`<section class="${CsName}"></section>`);
 
 
 
 const ober = new IntersectionObserver((aaaa) =>{
     aaaa.forEach(a =>{
         if(a.isIntersecting){
-            box.innerHTML +=AddHtml;
+            box.innerHTML += AddHtml;
+            cou++;
+            console.log(`【メッセージ】${cou}回目の生成`)
         }else{
             console.log("見られてない");
         }
@@ -22,3 +27,5 @@ const ober = new IntersectionObserver((aaaa) =>{
 });
 
 ober.observe(footer);
+
+
