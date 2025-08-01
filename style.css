@@ -1,0 +1,43 @@
+*{
+        transition: all 1s;
+        transition-delay: 0.3s;
+
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 60px;
+    background-color: #00000030;
+}
+header p{
+    text-align: center;
+    color: #0080ff;
+}
+main{
+    padding-top: 60px;
+    background-color: #ffffff;
+    width: 100vw;
+}
+main section{
+    border: #000 1px solid;
+    width: 100%;
+    height: 200vh;
+}
+main section:nth-child(1){
+    background-color: #00ffe5;
+}
+main section:nth-child(2){
+    background-color: #ff02d1;
+}
+main section:nth-child(3){
+    background-color: #f7ff07;
+}
+main .activ{
+    background-color: rgb(255, 0, 0);
+}
